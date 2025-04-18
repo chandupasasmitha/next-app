@@ -11,7 +11,7 @@ export default function AccommodationPage() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Image 
-              src="/images/logo.png" 
+              src="/images/logo.png" //background image should be change
               alt="Travelwish Logo" 
               width={32} 
               height={32} 
