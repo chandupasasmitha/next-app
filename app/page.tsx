@@ -35,7 +35,7 @@ export default function AccommodationPage() {
           <div className="relative w-full h-[60vh] md:h-full">
             <Image 
               src="/images/TravelwishBg.png" 
-              alt="Travelwish Background" 
+              alt="Travelwish Background image" 
               fill 
               className="object-contain"
             />
