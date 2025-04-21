@@ -27,10 +27,10 @@ export default function AccommodationPage() {
         </div>
       </nav>
 
-      {/* Main Content - Takes remaining height */}
+      {/* Main Content - Takes remaining      height */}
       <main className="flex flex-grow flex-col md:flex-row">
         
-        {/* Left Side - Image (50% on desktop) */}
+        {/* Left Side - Image (50% on     desktop) */}
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div className="relative w-full h-[60vh] md:h-full">
             <Image 
