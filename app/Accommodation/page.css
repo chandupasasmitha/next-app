@@ -1,0 +1,255 @@
+/* app/Accomodation/accommodation.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Background */
+  /* .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 66.67%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+  } */
+  .container {
+  min-height: 100vh; /* Full viewport height */
+  background-image: url('/images/background02.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+  
+  /* .container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #ffffff;
+    border-top-left-radius: 100%;
+    opacity: 0.7;
+    z-index: -1;
+  } */
+  
+  /* Form Section */
+  .form-section {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-header h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .home-icon {
+    margin-left: 1rem;
+    background-color: #dbeafe;
+    padding: 0.5rem;
+    border-radius: 9999px;
+  }
+  
+  .home-icon-inner {
+    background-color: #2563eb;
+    padding: 0.5rem;
+    border-radius: 9999px;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+    fill: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 1rem;
+    background-color: #dbeafe;
+    border: none;
+    border-radius: 0.375rem;
+    text-align: center;
+    color: #374151;
+    font-size: 1rem;
+  }
+  
+  input::placeholder {
+    color: #4b5563;
+  }
+  
+  .file-upload {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-color: #dbeafe;
+    border-radius: 0.375rem;
+    text-align: center;
+    color: #374151;
+    cursor: pointer;
+  }
+  
+  .file-upload label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.5rem;
+    fill: none;
+    stroke: currentColor;
+  }
+  
+  .file-upload input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .remove-btn, .submit-btn {
+    padding: 0.75rem 2rem;
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-btn:hover, .submit-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo-svg {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .logo-circle-outer {
+    fill: #3b82f6;
+  }
+  
+  .logo-circle-inner {
+    fill: #1e40af;
+  }
+  
+  .logo-plane {
+    fill: white;
+  }
+  
+  .logo-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #111827;
+  }
+  
+  .logo-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #374151;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+    
+    .form-section {
+      width: 50%;
+      padding: 2.5rem;
+    }
+    
+    .form-header h1 {
+      font-size: 2.25rem;
+    }
+    
+    .logo-section {
+      width: 50%;
+      padding: 2.5rem;
+    }
+    
+    .logo-svg {
+      width: 13rem;
+      height: 13rem;
+    }
+    
+    .logo-title {
+      font-size: 3.75rem;
+    }
+    
+    .logo-subtitle {
+      font-size: 1.5rem;
+    }
+  }
