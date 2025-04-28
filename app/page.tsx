@@ -35,7 +35,7 @@ export default function AccommodationPage() {
             /> */}
           </div>
           {/* <h1 className="text-5xl font-bold text-black mb-2">Travelwish</h1>
-          <p className="text-lg text-black">Your Passport to Adventure</p> */}
+          <p className="text-l   g text-black">Your Passport to Adventure</p> */}
         </div>
 
         {/* Right Side - Accommodation Management */}
