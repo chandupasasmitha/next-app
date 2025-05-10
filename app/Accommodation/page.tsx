@@ -57,7 +57,7 @@ export default function Accommodation() {
       <div className="form-section full-width">
         <div className="form-container">
           <div className="form-header">
-            <h1>YOUR DETAILS</h1>
+            <h1>YOUR DETAILS </h1>
             <div className="home-icon">
               <div className="home-icon-inner">
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,7 +111,7 @@ export default function Accommodation() {
             <input
               type="text"
               name="propertyType"
-              placeholder="PROPERTY TYPE"
+              placeholder="PROPERTY TYPE "
               value={formData.propertyType}
               onChange={handleChange}
             />
